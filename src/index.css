@@ -2,6 +2,79 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
+  background-color: #ebcccc;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2.5em;
+}
+
+.title {
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.form {
+  display: grid;
+}
+
+.label {
+  font-size: 0.75rem;
+  margin-bottom: 0.625em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 0.5em 2em;
+  line-height: 1.75rem;
+  border-radius: 50px;
+  border: 1px solid #bbb;
+  outline: none;
+  margin-bottom: 0.625em;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.25s;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (min-width: 786px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 0.625em;
+    align-items: center;
+  }
+
+  .label {
+    margin-bottom: 0;
+  }
+
+  .input {
+    margin-bottom: 0;
+  }
 }
