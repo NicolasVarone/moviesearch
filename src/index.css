@@ -104,3 +104,11 @@ small {
   margin: 0 auto;
   display: block;
 }
+
+@media (min-width: 786px) {
+  .card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
